@@ -12,13 +12,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "dashboardUi",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "dashboard-ui",
       "kebab-case"
     ],
     "import-blacklist": [
