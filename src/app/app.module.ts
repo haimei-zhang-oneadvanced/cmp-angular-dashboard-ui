@@ -8,6 +8,7 @@ import { MosaicIconsComponent } from '~components/mosaic-icons/mosaic-icons.comp
 import { HomeComponent } from '~views/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { SearchProductComponent } from './components/search-product/search-product.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     MosaicIconsComponent,
     HomeComponent,
     NavbarComponent,
-    NavigationComponent
+    NavigationComponent,
+    SearchProductComponent
   ],
   imports: [
     BrowserModule,
