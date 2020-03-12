@@ -29,7 +29,6 @@
               "src/libs"
             ],
             "styles": [
-              "node_modules/@advanced/mosaic-styles/css/mosaic-no-fonts.css",
               "node_modules/ngx-toastr/toastr.css",
               "src/styles.scss"
             ],
@@ -96,7 +95,6 @@
               "src/libs"
             ],
             "styles": [
-              "node_modules/@advanced/mosaic-styles/css/mosaic-no-fonts.css",
               "node_modules/ngx-toastr/toastr.css",
               "src/styles.scss"
             ],

@@ -1,77 +1,23 @@
-<div class="page sidebar-visible">
-  <!--main navbar-->
-  <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
-    <a href="#" class="navbar-brand">
-      <img src="../assets/images/advanced-logo.svg" alt="Advanced">
-      <span>Dashboard</span>
-    </a>
-    <button class="hamburger hamburger&#45;&#45;collapse menu-toggle" type="button" aria-label="Toggle navigation"
-            aria-controls="navigation" data-toggle="collapse" (click)="toggleSidebar()"
-            data-target="#navbar-minimum-collapse">
-      <span class="hamburger-label">Menu</span>
-      <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-minimum-collapse">
-      <ul class="navbar-sidebar-toggle nav">
-        <li class="nav-item">
-          <a href="javascript:void(0)" [ngClass]="{'is-active': sidebarToggled}" class="nav-link d-flex menu-toggle"
-             tabindex="0" role="button" (click)="toggleSidebar()">
-            <svg class="icon">
-              <use xlink:href="#arrow-left" href="#arrow-left"></use>
-            </svg>
-            <mosaic-icon icon="#left_arrow"></mosaic-icon>
-            <div>Menu</div>
-          </a>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <svg class="icon">
-              <use xlink:href="#comment" href="#comment"></use>
-            </svg>
-            <div>Feedback</div>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <svg class="icon mr-lg-0 mr-xl-1">
-              <use xlink:href="#question-circle" href="#question-circle"></use>
-            </svg>
-            <div class='d-block d-lg-none d-xl-block'>Help</div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="content-container">
-    <!--sidebar-->
-    <div class="sidebar-container" [ngClass]="{'pull-left-toggle': sidebarToggled}">
-      <div class="sidebar my-2">
-        <div class="nav-sidebar w-100">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="#" class="d-flex nav-link" routerLink="/home">
-                <div>Home</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="d-flex nav-link" routerLink="/home">
-                <div>Recent Orders</div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<mosaic-back-to-top scroll-y="500"></mosaic-back-to-top>
+<mosaic-page>
 
-    <!--main content-->
-    <div class="main-container" [ngClass]="{'pull-left-toggle': sidebarToggled}">
-      <div class="app-wrapper">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-</div>-
+  <dashboard-ui-navbar></dashboard-ui-navbar>
+
+  <mosaic-container content>
+
+    <mosaic-container left fixed sidebar id="4253515266" resize>
+
+      <dashboard-ui-navigation></dashboard-ui-navigation>
+
+    </mosaic-container>
+
+
+    <mosaic-container main>
+
+      <router-outlet></router-outlet>
+
+    </mosaic-container>
+
+  </mosaic-container>
+
+</mosaic-page>

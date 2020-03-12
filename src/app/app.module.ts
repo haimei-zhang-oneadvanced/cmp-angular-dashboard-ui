@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { MosaicIconsComponent } from '~components/mosaic-icons/mosaic-icons.component';
 
 import { HomeComponent } from '~views/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MosaicIconsComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
