@@ -14,6 +14,7 @@ import { NavigationComponent } from '~components/navigation/navigation.component
 import { SearchProductComponent } from '~components/search-product/search-product.component';
 import { MarketplaceNewsComponent } from '~components/marketplace-news/marketplace-news.component';
 import { MoreOrderTypesComponent } from '~components/more-order-types/more-order-types.component';
+import { InsightsComponent } from './components/insights/insights.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MoreOrderTypesComponent } from '~components/more-order-types/more-order
     SearchProductComponent,
     SearchProductResultComponent,
     MarketplaceNewsComponent,
-    MoreOrderTypesComponent
+    MoreOrderTypesComponent,
+    InsightsComponent
   ],
   imports: [
     BrowserModule,
