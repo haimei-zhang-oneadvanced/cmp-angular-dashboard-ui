@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { MosaicIconsComponent } from '~components/mosaic-icons/mosaic-icons.component';
 
 import { HomeComponent } from '~views/home/home.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { SearchProductComponent } from './components/search-product/search-product.component';
+import { SearchProductResultComponent } from '~views/search-product-result/search-product-result.component';
+
+import { NavbarComponent } from '~components/navbar/navbar.component';
+import { NavigationComponent } from '~components/navigation/navigation.component';
+import { SearchProductComponent } from '~components/search-product/search-product.component';
+import { MarketplaceNewsComponent } from '~components/marketplace-news/marketplace-news.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { SearchProductComponent } from './components/search-product/search-produ
     HomeComponent,
     NavbarComponent,
     NavigationComponent,
-    SearchProductComponent
+    SearchProductComponent,
+    SearchProductResultComponent,
+    MarketplaceNewsComponent
   ],
   imports: [
     BrowserModule,

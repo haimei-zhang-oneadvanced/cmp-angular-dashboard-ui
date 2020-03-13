@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'dashboard-ui-search-product',
@@ -8,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class SearchProductComponent implements OnInit {
 
   value: string;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   search(): void {
     console.log(this.value);
+    this.navigateToSearchPage();
+  }
+
+  private navigateToSearchPage(): void {
+    this.router.navigate(['/product-search-result']);
   }
 
 }
