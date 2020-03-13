@@ -290,7 +290,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
         symbolSize: (val) => {
           return val[2] * 2;
         },
-        data: data,
+        data,
         animationDelay: (idx) => {
           return idx * 5;
         }
