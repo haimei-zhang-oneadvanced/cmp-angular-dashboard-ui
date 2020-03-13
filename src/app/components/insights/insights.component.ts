@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as echarts from 'echarts';
+import EChartOption = echarts.EChartOption;
 
 @Component({
   selector: 'dashboard-ui-insights',
@@ -27,7 +28,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
   }
 
   private initChart1(): void {
-    const option = {
+    const option: EChartOption = {
       tooltip: {
         trigger: 'item',
         formatter: '{a} <br/>{b}: {c} ({d}%)'
@@ -128,7 +129,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
 
   private initChart2(): void {
     const colors = ['#5793f3', '#d14a61', '#675bba'];
-    const option = {
+    const option: EChartOption = {
       color: colors,
 
       tooltip: {
@@ -240,7 +241,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
       return [item[1], item[0], item[2]];
     });
 
-    const option = {
+    const option: EChartOption = {
       title: {
         text: '',
         link: 'https://github.com/pissang/echarts-next/graphs/punch-card'
@@ -251,7 +252,7 @@ export class InsightsComponent implements OnInit, AfterViewInit {
       },
       tooltip: {
         position: 'top',
-        formatter: (params) => {
+        formatter: (params: any) => {
           return params.value[2] + ' commits in ' + hours[params.value[0]] + ' of ' + days[params.value[1]];
         }
       },
