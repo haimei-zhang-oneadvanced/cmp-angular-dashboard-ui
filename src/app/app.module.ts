@@ -18,6 +18,8 @@ import { InsightsComponent } from '~components/insights/insights.component';
 import { MarketplaceUpdateComponent } from '~components/marketplace-update/marketplace-update.component';
 import { RecentPurchasesComponent } from '~components/recent-purchases/recent-purchases.component';
 import { ManageOrdersComponent } from '~components/manage-orders/manage-orders.component';
+import { SearchFilterComponent } from './components/search-filter/search-filter.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ManageOrdersComponent } from '~components/manage-orders/manage-orders.c
     InsightsComponent,
     MarketplaceUpdateComponent,
     RecentPurchasesComponent,
-    ManageOrdersComponent
+    ManageOrdersComponent,
+    SearchFilterComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,
