@@ -17,6 +17,7 @@ import { MoreOrderTypesComponent } from '~components/more-order-types/more-order
 import { InsightsComponent } from '~components/insights/insights.component';
 import { MarketplaceUpdateComponent } from '~components/marketplace-update/marketplace-update.component';
 import { RecentPurchasesComponent } from '~components/recent-purchases/recent-purchases.component';
+import { ManageOrdersComponent } from '~components/manage-orders/manage-orders.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RecentPurchasesComponent } from '~components/recent-purchases/recent-pu
     MoreOrderTypesComponent,
     InsightsComponent,
     MarketplaceUpdateComponent,
-    RecentPurchasesComponent
+    RecentPurchasesComponent,
+    ManageOrdersComponent
   ],
   imports: [
     BrowserModule,
