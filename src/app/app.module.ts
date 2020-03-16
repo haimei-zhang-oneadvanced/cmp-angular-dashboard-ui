@@ -14,8 +14,9 @@ import { NavigationComponent } from '~components/navigation/navigation.component
 import { SearchProductComponent } from '~components/search-product/search-product.component';
 import { MarketplaceNewsComponent } from '~components/marketplace-news/marketplace-news.component';
 import { MoreOrderTypesComponent } from '~components/more-order-types/more-order-types.component';
-import { InsightsComponent } from './components/insights/insights.component';
-import { MarketplaceUpdateComponent } from './components/marketplace-update/marketplace-update.component';
+import { InsightsComponent } from '~components/insights/insights.component';
+import { MarketplaceUpdateComponent } from '~components/marketplace-update/marketplace-update.component';
+import { RecentPurchasesComponent } from '~components/recent-purchases/recent-purchases.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MarketplaceUpdateComponent } from './components/marketplace-update/mark
     MarketplaceNewsComponent,
     MoreOrderTypesComponent,
     InsightsComponent,
-    MarketplaceUpdateComponent
+    MarketplaceUpdateComponent,
+    RecentPurchasesComponent
   ],
   imports: [
     BrowserModule,
